@@ -13,7 +13,7 @@ def randomtester(n: int) -> float:
 
 
 if __name__ == "__main__":
-    tests = range(15)  # On veut effectuer 15 tests
+    tests = range(1, 15 + 1)  # On veut effectuer 15 tests
     erreurs = [randomtester(2 ** j) for j in tests]  # Pour chaque test, on prend la puissance de 2 correspondante
 
     plt.plot(tests, erreurs)
